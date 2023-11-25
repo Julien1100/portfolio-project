@@ -87,7 +87,15 @@ button:hover {
   position: absolute;
   top: 0;
   right: calc(var(--padding-side) - 50px);
-  /* width: calc(50% - var(--padding-side)); */
-  width: 50vw;
+  height: 720px;
   padding: inherit;
+}
+
+.langageGrid {
+  padding-top: 70px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  column-gap: 90px;
+  row-gap: 90px;
+  font-size: 40px;
 }
