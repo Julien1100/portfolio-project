@@ -20,6 +20,25 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
   color: var(--pure-white);
+  width: 100vw;
+}
+
+button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  border-bottom: 2px solid var(--mint-green);
+  padding: 0 20px 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .header {
@@ -65,23 +84,6 @@ h3>span {
   line-height: 28px;
 }
 
-.devInfos button {
-  background-color: inherit;
-  color: inherit;
-  border: none;
-  border-bottom: 2px solid var(--mint-green);
-  padding: 0 20px 10px 20px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
 .illustration img {
   z-index: -1;
   position: absolute;
@@ -101,6 +103,11 @@ button:hover {
   font-size: 40px;
 }
 
+.project-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 h2.project-title {
   font-size: 72px;
   font-weight: 700;
@@ -112,10 +119,15 @@ h2.project-title {
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 46px 30px;
   padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.project-image {
+  width: 100%;
 }
 
 .project-name {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 32px;
   padding-top: 40px;
