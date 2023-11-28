@@ -2,7 +2,8 @@
 
 :root {
   --pearl-gray: #D9D9D9;
-  --deep-black: #242424;
+  --light-black: #242424;
+  --deep-black: #151515;
   --pure-white: #FFFFFF;
   --mint-green: #4EE1A0;
   --padding-side: 165px;
@@ -17,6 +18,7 @@
 body {
   background-color: var(--deep-black);
   padding: 0 var(--padding-side);
+  padding-bottom: 60px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
   color: var(--pure-white);
@@ -144,4 +146,53 @@ h2.project-title {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.contact-container {
+  padding: 80px 70px;
+  background: var(--light-black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--pure-white);
+}
+
+.contact-infos {
+  width: 35%;
+}
+
+.contact-title {
+  font-size: 70px;
+}
+
+.contact-description {
+  line-height: 28px;
+}
+
+.contact-form>form {
+  display: flex;
+  flex-direction: column;
+}
+
+form>button {
+  align-self: end;
+}
+
+form>input,
+form>textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--pure-white);
+  margin-bottom: 32px;
+  padding: 20px;
+  resize: none;
+}
+
+::placeholder {
+  text-transform: uppercase;
+}
+
+input:focus,
+textarea:focus {
+  color: var(--pure-white);
 }
